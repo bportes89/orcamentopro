@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "Orçamento Pro",
+    "slug": "orcamentopro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "orcamentopro",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.orcamentopro.app",
+      "icon": "./assets/images/icon.png",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.orcamentopro.app",
+      "permissions": [],
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "./plugins/with-nitro-html-pdf",
+      "./plugins/with-revenuecat-android",
+      "expo-router",
+      "expo-dev-client",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permita o acesso às suas fotos para escolher a logo do seu perfil.",
+          "cameraPermission": "Permita o uso da câmera para tirar uma foto da logo do seu perfil.",
+          "microphonePermission": false
+        }
+      ],
+      "./plugins/with-store-permissions",
+      "expo-sharing",
+      "@sentry/react-native",
+      "expo-localization"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "500518c3-3000-4e52-a452-74b88cf8f1bd"
+      }
+    },
+    "owner": "bportes89"
+  }
+}

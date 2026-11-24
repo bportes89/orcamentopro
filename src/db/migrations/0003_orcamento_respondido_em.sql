@@ -1,0 +1,1 @@
+ALTER TABLE `orcamentos` ADD `respondido_em` text;
