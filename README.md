@@ -119,6 +119,7 @@ Antes de gerar uma versão para as lojas:
 7. Rodar `npx tsc --noEmit`, `npx expo lint`, `npx expo-doctor@latest` e `CI=1 npx expo export --platform android`.
 8. Testar: cadastro → onboarding → primeiro orçamento salvo → PDF → WhatsApp → assinatura em sandbox → restauração.
 9. Aumentar `version` em `app.json` para cada nova versão de loja.
+10. Para habilitar upload de source maps nativas, configure o plugin `@sentry/react-native/expo` com `organization`, `project` e `SENTRY_AUTH_TOKEN`. O plugin foi removido do `app.json` porque esses valores ainda não foram fornecidos; o `Sentry.init` JavaScript continua ativo via `EXPO_PUBLIC_SENTRY_DSN`.
 
 ### Configuração do EAS
 

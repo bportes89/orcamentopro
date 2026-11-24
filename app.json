@@ -55,7 +55,6 @@
       ],
       "./plugins/with-store-permissions",
       "expo-sharing",
-      "@sentry/react-native",
       "expo-localization"
     ],
     "experiments": {
