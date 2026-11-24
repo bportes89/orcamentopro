@@ -167,14 +167,14 @@ O perfil de submissão Android usa a faixa `internal` com release status `draft`
 
 ### Publicar a política de privacidade
 
-O arquivo `docs/privacy.md` está pronto para GitHub Pages. Substitua os placeholders, faça o commit em um repositório com GitHub Pages habilitado na pasta `/docs` e acesse:
+O arquivo `docs/privacy.md` está publicado via GitHub Pages na pasta `/docs` do repositório `bportes89/orcamentopro`. Substitua os placeholders de responsável/e-mail antes da submissão e acesse:
 
 ```text
-https://SEU_USUARIO.github.io/orcamentopro/privacy.html
+https://bportes89.github.io/orcamentopro/privacy.html
 ```
 
 Use essa URL nos campos de política de privacidade da App Store Connect e do Google Play Console.
 
 ### Estado atual deste workspace
 
-Este diretório não é um repositório Git, não tem projeto EAS vinculado, credenciais das lojas ou dispositivos de teste. Portanto, builds de produção, submissão, TestFlight/Play Internal Testing e a publicação efetiva da política de privacidade precisam ser executados em um ambiente com essas credenciais.
+Repositório: `https://github.com/bportes89/orcamentopro`. Projeto EAS: `@bportes89/orcamentopro`. Política publicada em `https://bportes89.github.io/orcamentopro/privacy.html`. Ainda são necessárias credenciais de assinatura da Apple/Google e contas de TestFlight/Play Console para submeter; dispositivos de teste são necessários para validar a instalação.

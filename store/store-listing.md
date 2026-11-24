@@ -41,8 +41,8 @@ orçamento, orçamento pdf, eletricista, pintor, pedreiro, técnico, gerador de 
 
 ## URLs obrigatórias
 
-- Política de Privacidade: `https://SEU_USUARIO.github.io/orcamentopro/privacy.html`
-- Site de suporte: `https://SEU_USUARIO.github.io/orcamentopro/`
+- Política de Privacidade: `https://bportes89.github.io/orcamentopro/privacy.html`
+- Site de suporte: `https://bportes89.github.io/orcamentopro/`
 - E-mail de suporte: `SUPORTE@EXEMPLO.COM`
 
 ## Categoria
