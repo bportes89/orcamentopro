@@ -12,9 +12,18 @@ if (!supabaseUrl || !supabaseAnonKey) {
   );
 }
 
+const armazenamentoSemJanela = {
+  getItem: async () => null,
+  setItem: async () => undefined,
+  removeItem: async () => undefined,
+};
+
+const storage =
+  typeof window === "undefined" ? armazenamentoSemJanela : AsyncStorage;
+
 export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
   auth: {
-    storage: AsyncStorage,
+    storage,
     persistSession: true,
     autoRefreshToken: true,
     detectSessionInUrl: false,
